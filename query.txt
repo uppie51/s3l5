@@ -1,0 +1,27 @@
+
+
+
+
+
+QUERY  
+ elenca specifica data.
+Select * from dettagli vendite where data_acquisto= '2023-01-01';
+
+elenco con sconti maggiore di 50.
+
+select * from vendite where sconto_prodotto > '50.0';
+calcolare il totale delle vendite per categoria prodotto
+
+Select 'categoria prodotto' sum (prezzo_prodotto-sconto_prodotto) AS tot vendite from vendite group by 'categoria_prdotoo';
+il totale venduto per orni prodotto
+Select categoria prodotto sum(q) as totale_vendut from dettagli vendite  join vendite on dettagli vendite.id tranzazione=vendite.idtranzazione gruop by categoria prodotto
+
+le vendite dell'ultimo trimestre
+SElect ìid transazione', 'data_acquisto','categoria_prodotto','prezzo_prodotto','sconto_prodotto' from vendite where 'data_acquisto' between '2023-01-01' and '2023-03-31';
+
+
+
+
+
+
+
